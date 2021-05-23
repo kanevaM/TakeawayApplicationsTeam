@@ -51,7 +51,7 @@ e-mail :testuser@test.test <br>
 9. Click on Order and Pay button to finish order your process
 10. Get the order reference number from latest page
 
-###### Attached file with bug: Bug TA1 Case_2 TEST Restaurant Selenium.docx 
+###### Attached file with bug: Bug TA1  Case_2 TEST Restaurant Selenium.docx
 
 #### Executing Tests
 Place the caret at the test class to run all tests in that class, or at the test method, and press Ctrl+Shift+F10. <br>
