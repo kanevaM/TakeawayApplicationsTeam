@@ -13,7 +13,7 @@ Feature: Add one menu from menu list (by clicking the item and adding more ingre
     And Select Asello test restaurant from restaurant list
     And Add any Asselo test item from the restaurant menu into the basket
     And Press the Order button and navigate to filling the address page
-    And Fill form page Address : "main street 2415" PostCode : "8888AA" City: "Enschede" Name: "TestUSer" PhoneNum: "1234567890" e-mail: "testuser@test.test"
+    And fill Address: "main street 2415" PostCode: "8888AA" City: "Enschede" Name: "TestUSer" PhoneNum: "1234567890" e-mail: "testuser@test.test"
     And Fill the form with ASAP delivery option
     And Select the payment amount from the combo box at the bottom of the page
     And Click on Order and Pay button to finish your order process
@@ -27,7 +27,7 @@ Feature: Add one menu from menu list (by clicking the item and adding more ingre
     And Select TEST Restaurant Selenium restaurant from restaurant list
     And Add any Restaurant Selenium item from the restaurant menu into the basket
     And Press the Order button and navigate to filling the address page
-    And Fill form page Address : "main street 2415" PostCode : "8888AA" City: "Enschede" Name: "TestUSer" PhoneNum: "1234567890" e-mail: "testuser@test.test"
+    And fill Address: "main street 2415" PostCode: "8888AA" City: "Enschede" Name: "TestUSer" PhoneNum: "1234567890" e-mail: "testuser@test.test"
     And Fill the form with ASAP delivery option
     And Select the payment amount from the combo box at the bottom of the page
     And Click on Order and Pay button to finish your order process
@@ -41,7 +41,7 @@ Feature: Add one menu from menu list (by clicking the item and adding more ingre
     And Select RealPizza Test restaurant from restaurant list
     And Add any RealPizza item from the restaurant menu into the basket
     And Press the Order button and navigate to filling the address page
-    And Fill form page Address : "main street 2415" PostCode : "8888AA" City: "Enschede" Name: "TestUSer" PhoneNum: "1234567890" e-mail: "testuser@test.test"
+    And fill Address: "main street 2415" PostCode: "8888AA" City: "Enschede" Name: "TestUSer" PhoneNum: "1234567890" e-mail: "testuser@test.test"
     And Fill the form with ASAP delivery option
     And Select the payment amount from the combo box at the bottom of the page
     And Click on Order and Pay button to finish your order process
