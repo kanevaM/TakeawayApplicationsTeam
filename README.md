@@ -31,12 +31,12 @@ Maven
 10. Select the payment amount from the combo box at the bottom of the page (Please select the closest amount to order price. Example: if the order price is 11 Euro and if there the closest option on combo box 13 Euro then select 13 Euro)
 11. Click on Order and Pay button to finish your order process
 12. Get the order reference number from latest page
-Address : main street 2415 <br>
-PostCode : 8888AA <br>
-City : Enschede <br>
-Name :TestUSer <br>
-PhoneNum :1234567890 <br>
-e-mail :testuser@test.test <br>
+Address: main street 2415 <br>
+PostCode: 8888AA <br>
+City: Enschede <br>
+Name: TestUSer <br>
+PhoneNum: 1234567890 <br>
+e-mail: testuser@test.test <br>
 
 #### Case 2:
 (This case do note have the same complexity as the top one)
