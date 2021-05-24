@@ -60,11 +60,11 @@ public class StepDefinitions {
     public void before() {
         WebDriverManager.chromedriver().setup();
         WebDriverManager.firefoxdriver().setup();
-        //  startBrowser("firefox");
         startBrowser("chrome");
+        // startBrowser("firefox"); // uncomment in order to run with firefox
     }
 
-    @After
+    @After // if test failed will save screenshots
     public void after(Scenario scenario) {
         if (scenario.isFailed()) {
             if (driver instanceof TakesScreenshot) {
@@ -85,7 +85,7 @@ public class StepDefinitions {
                 LOGGER.info("Driver '{}' can't take screenshots so skipping it.", driver.getClass());
             }
         }
-        driver.quit();
+        driver.quit(); //close browser instance
     }
 //    @After
 //    public void after() {
@@ -207,6 +207,8 @@ public class StepDefinitions {
 
     @And("Press the Order button and navigate to filling the address page")
     public void pressTheOrderButton() {
+        WebDriverWait wait = new WebDriverWait(driver, 25);
+        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".basket.basket-container__scroller > button")));
         orderButton.click();
     }
 
@@ -266,8 +268,8 @@ public class StepDefinitions {
         driver.findElement(By.cssSelector("#O7NON00P11 > div.meal.meal__top-button.js-meal-item > div.js-meal__add-to-basket-button.menucard-meal__sidedish-button")).click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#isidedishselectionformO7NON00P11 > div.sidedish-footer.notranslate > div.meal-price > div.meal-price__block.meal-price__block--substract > button")));
         action.scrollToElement(addSideDish, driver);
-        JavascriptExecutor jse = (JavascriptExecutor) driver;
-        jse.executeScript("arguments[0].click()", addSideDish); // addSideDish.click();
+        JavascriptExecutor jse = (JavascriptExecutor) driver;           //   wait.until(ExpectedConditions.elementToBeClickable(addSideDis));
+        jse.executeScript("arguments[0].click()", addSideDish);   //   addSideDish.click();
         action.clickToMealAddBtn();
     }
 
