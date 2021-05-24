@@ -14,6 +14,7 @@ Java <br>
 Cucumber for Java <br>
 WebDriver <br>
 JUnit <br>
+JSON <br>
 TestNG <br>
 Maven
 
@@ -59,3 +60,5 @@ Alternatively, click the the Run button gutter icon next to the test class or te
 
 When the tests finish running, the results are displayed on the Test Runner tab of the Run tool window.<br> 
 On this tab, you can rerun tests, export and import test results, see how much time it took to run each test, and so on. 
+
+Other way to execute tests is to write in terminal: mvn clean verify <br> - performs any integration tests that maven finds in the project. mvn install implicitly runs mvn verify and then copies the resulting artifact into your local maven repository which you usually can find under C:\Users\username\. m2\repository if you are using windows
