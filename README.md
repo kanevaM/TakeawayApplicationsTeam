@@ -14,6 +14,7 @@ Java <br>
 Cucumber for Java <br>
 WebDriver <br>
 JUnit <br>
+JSON <br>
 TestNG <br>
 Maven
 
@@ -31,12 +32,12 @@ Maven
 10. Select the payment amount from the combo box at the bottom of the page (Please select the closest amount to order price. Example: if the order price is 11 Euro and if there the closest option on combo box 13 Euro then select 13 Euro)
 11. Click on Order and Pay button to finish your order process
 12. Get the order reference number from latest page
-Address : main street 2415 <br>
-PostCode : 8888AA <br>
-City : Enschede <br>
-Name :TestUSer <br>
-PhoneNum :1234567890 <br>
-e-mail :testuser@test.test <br>
+Address: main street 2415 <br>
+PostCode: 8888AA <br>
+City: Enschede <br>
+Name: TestUSer <br>
+PhoneNum: 1234567890 <br>
+e-mail: testuser@test.test <br>
 
 #### Case 2:
 (This case do note have the same complexity as the top one)
@@ -59,3 +60,5 @@ Alternatively, click the the Run button gutter icon next to the test class or te
 
 When the tests finish running, the results are displayed on the Test Runner tab of the Run tool window.<br> 
 On this tab, you can rerun tests, export and import test results, see how much time it took to run each test, and so on. 
+
+Other way to execute tests is to write in terminal: mvn clean verify <br> - performs any integration tests that maven finds in the project. mvn install implicitly runs mvn verify and then copies the resulting artifact into your local maven repository which you usually can find under C:\Users\username\. m2\repository if you are using windows
